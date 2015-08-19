@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <link href="content/css/savio_style.css" rel="stylesheet" type="text/css" />
+    </head>
+<body>
+<div id="templatemo_menu_panel">
+    <ul>
+        <li><a href="#/book"><button class="buttonstyle">BOOKING</button></a></li>
+        <li><a href="#/menu"><button class="buttonstyle">MENU</button></a></li>
+        <li><a href="#/login"><button class="buttonstyle">LOGIN</button></a></li>
+    </ul>
+</div> <!-- end of menu -->
+<div id="sav" ng-controller="editCtrl">
+    <form class="login" ng-hide="detail.name">
+        <p>
+            <label id="code1">Code:</label>
+            <input type="text" name="confirm" id="confirm" ng-model="detail.id" required>
+        </p>
+        <p class="login-submit">
+            <button type="submit" class="btn" ng-click="edit(detail.id)">Submit</button>
+        </p>
+    </form>
+<div>
+    <form class="login" id="logform" ng-show="detail.name">
+        <p>
+        <label>Name:</label>
+        <input type="text" name="name" id="name"  ng-model="detail.name" required>
+    </p>
+        <p>
+            <label>date:</label>
+            <input type="text" name="date" id="date"  ng-model="detail.date" required>
+        </p>
+        <p>
+            <label>time:</label>
+            <input type="text" name="time"  id="time" ng-model="detail.time" required>
+        </p>
+        <p>
+            <label>Size:</label>
+            <input type="text" name="size"  id="size" ng-model="detail.size" required>
+        </p>
+        <p>
+            <label>Contact:</label>
+            <input type="text" name="contact" id="Contact" ng-model="detail.contact" required>
+        </p>
+        <p class="login-submit">
+        <button type="submit" class="btn" style="margin-top:230px" ng-click="update(detail.id)">update</button>
+            <button type="submit" class="btn" style="margin-top:230px;margin-left: 50px" ng-click="cancel(detail.id)">Cancel</button>
+    </p>
+    </form>
+</div>
+</div>
+    <div id="footer"></div>
+<script src="../controllers/editCtrl.js"></script>
+</body>
+</html>

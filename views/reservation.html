@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myapp" xmlns:margin-left="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="content/css/savio_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="templatemo_menu_panel">
+    <ul style="width: 750px">
+        <li><a href="../index.html"><button class="buttonstyle">HOME</button></a>
+                    </li>
+        <li><a href="Index.html"><button class="buttonstyle">LOGOUT</button></a></li>
+    </ul>
+</div> <!-- end of menu -->
+<div ng-controller="reservationCtrl">
+<table id="tableone" style="margin-left: 220px"  border="2">
+    <tr>
+        <td>booking ref</td>
+        <td>Name</td>
+        <td>Date</td>
+        <td>Size</td>
+        <td>time</td>
+        <td>Contact</td>
+        <td><input type="text" placeholder="search" ng-model="reserved"></td>
+    </tr>
+    <tr ng-repeat="b in bookdetails| filter:reserved">
+        <td>{{b._id}}</td>
+        <td>{{b.name}}</td>
+        <td>{{b.date}}</td>
+       <td>{{b.size}}</td>
+        <td>{{b.time}}</td>
+        <td>{{b.contact}}</td>
+    </tr>
+</table>
+</div>
+<script src="../restaurant.js"></script>
+</body>
+</html>

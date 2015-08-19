@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <link href="content/css/savio_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="templatemo_menu_panel">
+    <ul>
+        <li><a href="#/menu"><button class="buttonstyle">Menu</button></a></li>
+        <li><a href="#/create"><button class="buttonstyle">Edit/Cancel</button></a></li>
+        <li><a href="#/login"><button class="buttonstyle">LOGIN</button></a></li>
+    </ul>
+</div> <!-- end of menu -->
+<div ng-controller="bookCtrl">
+<div ng-hide="value">
+    <form class="login" id="logform" name="myform" novalidate>
+        <p>
+            <label>Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" ng-model="detail.name" required ng-minlength="2" ng-maxlength="10">
+
+        <div class="errors" ng-messages="myform.name.$error" ng-if="myform.name.$dirty">
+            <p ng-message="required">Name is required</p>
+            <p ng-message="minlength">Name should be min of 2 characters</p>
+            <p ng-message="maxlength">Name should be max of 10 characters</p>
+            </div>
+        </p>
+        <p>
+            <label>Date:</label>
+            <input type="text" name="date" id="date" placeholder="mm/dd/yyyy" ng-model="detail.date" ng-pattern="/^(0?[1-9]|1[012])\/(0?[1-9]|[12][0-9]|3[01])\/(199\d|[2-9]\d{3})$/" required>
+        <div class="errors" ng-messages="myform.date.$error" ng-if="myform.date.$dirty">
+            <p ng-message="required">Date is required</p>
+            <p ng-message="pattern">Date should be in mm/dd/yyyy format</p>
+        </div>
+        </p>
+
+        <p>
+            <label>Time:</label>
+            <input type="type" name="time" id="time" placeholder="HH:mm" ng-model="detail.time" required>
+        <div class="errors" ng-messages="myform.time.$error" ng-if="myform.time.$dirty">
+            <p ng-message="required">time is required</p>
+                </div>
+        </p>
+        <p>
+            <label>Size:</label>
+            <input type="text" name="size" id="size" placeholder="3" ng-model="detail.size" ng-pattern="/^[1-9]{1}$/" required>
+        <div class="errors" ng-messages="myform.size.$error" ng-if="myform.size.$dirty">
+            <p ng-message="required">Size is required</p>
+            <p ng-message="pattern">Enter number</p>
+        </div>
+        </p>
+        <p>
+            <label>contact:</label>
+            <input type="text" name="contact" id="contact" placeholder="329-779-0800" ng-model="detail.contact" ng-pattern="/^([0-9]{3})?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/" required>
+        <div class="errors" ng-messages="myform.contact.$error" ng-if="myform.contact.$dirty">
+            <p ng-message="required">contact is required</p>
+            <p ng-message="pattern">phone format is incorrect</p>
+        </div>
+        </p>
+        <p>
+            <button type="submit" id="savcustom" ng-click="book();value='clicked'">Book</button>
+        </p>
+    </form>
+    </div>
+    <div ng-show="value" class="login">
+      <h4>Booking reference is  {{detail._id}}</h4>
+    </div>
+</div>
+<div id="footer"></div>
+<script src="https://code.angularjs.org/1.3.15/angular-messages.min.js"></script>
+<script src="../controllers/bookCtrl.js"></script>
+</body>
+</html>

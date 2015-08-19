@@ -1,0 +1,77 @@
+<html ng-app="myapp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Savio's Restaurant</title>
+
+</head>
+<body onload="logo()">
+<link href="content/css/savio_style.css" rel="stylesheet" type="text/css" />
+<div class="logo">
+</div>
+<div class="timing">
+    <h3>Timing</h3>
+    <p>Mon-Fri: 12:00pm-11:00pm</p>
+</div>
+
+
+<div id="templatemo_menu_panel" ng-hide="value1">
+    <ul>
+        <li><a href="#/menu" ng-click="value1='clicked'"><button class="buttonstyle">MENU</button></a></li>
+        <li><a href="#/book" ng-click="value1='clicked'"><button class="buttonstyle">BOOKING</button></a></li>
+        <li><a href="#/create" ng-click="value1='clicked'"><button class="buttonstyle">Edit/Cancel</button></a></li>
+        <li><a href="#/login" ng-click="value1='clicked'"><button class="buttonstyle">LOGIN</button></a></li>
+    </ul>
+</div> <!-- end of menu -->
+<div ng-view>
+
+</div>
+
+<div id="fontstyle" ng-hide="value1">
+    <h1>Chicago's Best Restaurant</h1>
+    <p id="spacing">Get a taste of our dining experience<p>
+    <p>before your ever take a bite..!!</p>
+    <p><a href="#/book" ng-click="value1='clicked'"><button>BOOK TABLE</button></a></p>
+</div>
+<div ng-hide="value1" class="testing">
+    <img  class="imgstyle" src="content/img/resto1.jpg" alt="image"/>
+    <p>Welcome to Savio's Restaurant!! best in town</p>
+
+    <h1>WELCOME !!</h1>
+    <img class="smallimg" src="content/img/resto2.jpg" alt="image"/>
+    <p style="margin-left: 595px">We have the Best chef's</p>
+    <p style="margin: 330px 0px 0px 555px">We have different varieties of dishes</p>
+    <h1 style="margin-left: 611px">ABOUT US</h1>
+    <img class="smallimg1" src="content/img/resto3.jpg" alt="image"/>
+    <p style="margin-left: 1095px">Mob: +123456879</p>
+    <p style="margin: 330px 0px 0px 1065px">Email: friends@gmail.com</p>
+    <h1 style="margin-left: 1084px">CONTACT</h1>
+    <img class="smallimg2" src="content/img/resto4.jpg" alt="image"/>
+
+</div>
+<div class="footerelement">
+    <h4>Follow Us On</h4>
+    <ul id="icons">
+        <li><a href="https://www.facebook.com/pages/Savios-Restaurant/105680389471627?fref=ts" target="_blank"><img src="content/img/icon1.gif" alt="img"></a></li>
+        <li><a href="https://www.linkedin.com/pub/savio-joseph/2a/876/390" target="_blank"><img src="content/img/icon2.gif" alt="img"></a></li>
+        <li><a href="https://twitter.com/saviosam007" target="_blank"><img src="content/img/icon3.gif" alt="img"></a></li>
+    </ul>
+    <hr>
+    <p>Copyright @2015 Savio's Project</p>
+
+</div>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="content/js/testing.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.3.15/angular-route.min.js"></script>
+<script src="https://code.angularjs.org/1.3.15/angular-messages.min.js"></script>
+<script src="restaurant.js"></script>
+<script src="controllers/bookCtrl.js"></script>
+<script src="controllers/editCtrl.js"></script>
+<script src="controllers/loginCtrl.js"></script>
+<script src="controllers/menuCtrl.js"></script>
+</body>
+</html>

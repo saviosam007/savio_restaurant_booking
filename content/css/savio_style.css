@@ -1,0 +1,541 @@
+html {
+    background: url("https://cloud.githubusercontent.com/assets/10212404/7468970/567b4f1a-f2c3-11e4-899e-7f7bc2cae4db.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    zoom:75%;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+    html{
+        zoom: 35%;
+    }
+}
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    html{
+        zoom: 50%;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    zoom: 100% !important;
+}
+
+h1 {
+    margin: 0px;
+    padding: 10px 0;
+    font-size: 26px;
+    color: #d77707;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    color: #ff9d11;
+    border-bottom: 1px dotted #663e17;
+}
+
+h3 {
+    margin: 0 0 15px 0;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    color: #ffc64a;
+    border-bottom: 1px dotted #663e17;
+}
+
+p {
+    margin: 0px;
+    padding: 0 0 10px 0;
+    text-align: justify;
+}
+
+
+/* ----- Form ----- */
+
+form{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: right;
+}
+
+#timings{
+    margin:0px 0px 0px 0px;
+}
+
+.timing p{
+    z-index: 1;
+    margin-top: 45px;
+    position: absolute;
+    margin-left: 1390px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.timing h3{
+    z-index: 1;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 1465px;
+    font-size: 20px;
+    border-bottom: 0px;
+    font-family: cursive;
+}
+/* menu */
+#templatemo_menu_panel{
+    margin: 0 auto;
+    padding: 30px 0 0 285px;
+    color: #ffffff;
+
+}
+
+
+#templatemo_menu_panel ul {
+    float: left;
+    width: 500px;
+    margin: 0;
+    padding: 15px 0 0 400px;
+    text-align: center;
+    list-style: none;
+}
+
+#templatemo_menu_panel ul li{
+    float: left;
+    width: 109px;
+    text-align: center;
+    line-height: 21px;
+}
+
+#templatemo_menu_panel ul li a{
+    float: left;
+    width: 110px;
+    padding: 5px 0;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+
+}
+
+
+
+#templatemo_menu_panel ul li ul{
+    display: none;
+}
+#templatemo_menu_panel ul li:hover ul{
+    display: block;
+    width: 105px;
+    padding: 15px 0;
+    color: #838887;
+    background: #9E989A;
+}
+.buttonstyle {
+    background: #A6A0A2;
+    color: #1E2511;
+    border-radius: 15%;
+    width: 95px;
+    height: 45px;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: fantasy;
+}
+
+.imgstyle{
+    padding: 20px 20px 20px 40px;
+    margin-left: 500px;
+    width: 60%;
+    height: 40%;
+}
+.imgstyle01{
+    padding: 20px 20px 20px 40px;
+    margin-left: 500px;
+    width: 40%;
+    height: 56%;
+}
+
+.testing{
+    background: #080707;
+    margin: 80px 200px 500px;
+    padding: 0 18px 0px 10px;
+
+}
+.testing01{
+    background: #080707;
+    margin: 130px 200px 500px;
+    padding: 0 18px 0px 10px;
+
+}
+.testing1{
+    background: #080707;
+    margin: 280px 200px 500px;
+    padding: 0 18px 0px 10px;
+
+}
+.smallimg{
+    margin: 30px -5px;
+    padding: 90px 35px 140px 35px;
+    position: absolute;
+    z-index: 200;
+    width: 360px;
+    height: 130px;
+    background: black;
+}
+.testing h1{
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: 300;
+    margin-left: 94px;
+    position: absolute;
+    z-index: 201;
+    font-family: fantasy;
+}
+.testing p{
+    margin-top: 280px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 14px;
+    position: absolute;
+    z-index: 202;
+    font-family: fantasy;
+}
+.smallimg1{
+    margin: 30px 0px 0px 485px;
+    padding: 90px 35px 140px 35px;
+    position: absolute;
+    z-index: 200;
+    width: 360px;
+    height: 130px;
+    background: black;
+}
+.smallimg2{
+    margin: 30px 0px 0px 960px;
+    padding: 90px 35px 140px 35px;
+    position: absolute;
+    z-index: 200;
+    width: 360px;
+    height: 130px;
+    background: black;;
+}
+.footerelement{
+    margin-top: -50px;
+}
+.footerelement p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 794px;
+    position: absolute;
+    z-index: 201;
+    font-family: fantasy;
+    color: #d77707;
+}
+.footerelement h4{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 1486px;
+    position: absolute;
+    z-index: 201;
+    font-family: fantasy;
+}
+#icons{
+    margin-left: 1550px;
+}
+#icons li{
+    margin-left: 4px;
+    display: inline;
+}
+#fontstyle{
+    position: absolute;
+    z-index: 100;
+    display: block; /* may help stop any text wrapping and display it inline. */
+    top: 190px;
+    left: 250px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+#fontstyle h1{
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+#fontstyle p{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+#spacing{
+    margin-top: 100px;
+}
+.btn {
+    margin-top: 100px;
+    background: #d93491;
+    background-image: -webkit-linear-gradient(top, #452C19, #9B7463);
+    background-image: -moz-linear-gradient(top, #452C19, #9B7463);
+    background-image: -ms-linear-gradient(top, #452C19, #9B7463);
+    background-image: -o-linear-gradient(top, #452C19, #9B7463);
+    background-image: linear-gradient(to bottom, #452C19, #9B7463);
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ededed;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+
+#tableone{
+    width: 430px;
+    height: 200px;
+    margin-left: 685px;
+    margin-top: 100px;
+    background-color: #413C3C;
+}
+#tableone td{
+    font-size: 20px;
+}
+#tableone td a{
+    color: #d77707;
+}
+#tabletwo{
+    margin-top: 100px;
+    width:100%;
+    border:0;
+    align:"center";
+    cellpadding:3;
+    cellspacing:1;
+    background-color:#FFFFFF;
+}
+.login {
+    position: relative;
+    margin: 150px auto;
+    width: 400px;
+    height: 200px;
+    padding-right: 32px;
+    font-weight: 300;
+    color: #FDF4FD;
+    background-color: #5F5A5A;
+}
+.login p {
+    margin: 0 0 10px;
+}
+.login h4{
+    font-size: 20px !important;
+}
+input, button, label {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+@include box-sizing(border-box);
+}
+label {
+    float: left;
+    width: 100px;
+    margin-top: 15px;
+    line-height: 40px;
+    padding-right: 10px;
+    font-weight: 100;
+    text-align: right;
+    letter-spacing: 1px;
+}
+.login-submit {
+    position: absolute;
+    top: 96px;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 32px;
+}
+
+.login-submit .btn
+{
+    margin-top: 115px;
+    margin-left: -265px;
+    background-image: linear-gradient(to bottom, #0D0C0C, #999390);
+}
+
+
+form{
+    display:block;
+    width:50px;
+    height: 50px;
+}
+#login{
+    margin-top: 25px;
+}
+#password{
+    margin-top: 25px;
+}
+#time{
+    margin-top: 25px;
+}
+#date{
+    margin-top: 25px;
+}
+#size{
+    margin-top: 25px;
+}
+#contact{
+    margin-top: 25px;
+}
+#email{
+    margin-top: 25px;
+}
+#address{
+    margin-top: 25px;
+}
+#restname{
+    margin-top: 25px;
+}
+#savcustom{
+    margin-left: 162px;
+}
+#code11{
+    margin-top: 25px;
+}
+#name{
+    margin-top: 25px;
+}
+#tables{
+    margin-top: 25px;
+    margin-left: 109px;
+}
+#confirm{
+    margin-top: 75px;
+    width: 95px;
+    height: 20px;
+}
+p #code1 {
+    margin-top: 65px;
+}
+.login-submit1 {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 32px;
+}
+
+.login-submit1 .btn
+{
+    margin-top: 215px;
+    margin-left: -1045px;
+    background-image: linear-gradient(to bottom, #0D0C0C, #999390);
+}
+
+.login-submit2 {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 32px;
+}
+
+.login-submit2 .btn
+{
+    margin-top: 215px;
+    margin-left: -845px;
+    background-image: linear-gradient(to bottom, #0D0C0C, #999390);
+}
+#logform{
+    height: auto;
+
+}
+
+#viewlist a ul:hover li {
+    background: #A6A0A2;
+    display: block; /* display the dropdown */
+}
+@-webkit-keyframes savio {
+    0% {left:0px; transform:rotate(0deg);}
+    25% {left:20px; transform: rotate(10deg);}
+    75% {left:10px; transform: rotate(25deg);}
+    100% {left:5px; transform: rotate(0deg);}
+}
+@-moz-keyframes savio {
+    0% {left:0px; transform:rotate(0deg);}
+    25% {left:20px; transform: rotate(10deg);}
+    75% {left:10px; transform: rotate(25deg);}
+    100% {left:5px; transform: rotate(0deg);}
+ }
+@-o-keyframes savio {
+    0% {left:0px; transform:rotate(0deg);}
+    25% {left:20px; transform: rotate(10deg);}
+    75% {left:10px; transform: rotate(25deg);}
+    100% {left:5px; transform: rotate(0deg);}
+}
+@keyframes savio {
+    0% {left:0px; transform:rotate(0deg);}
+    25% {left:20px; transform: rotate(10deg);}
+    75% {left:10px; transform: rotate(25deg);}
+    100% {left:5px; transform: rotate(0deg);}
+}
+.logo{
+    position: relative;
+    width:100px;
+    margin-right:0.5%;
+    margin-top:1% ;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: savio;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-name: savio;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: 1;
+    -o-animation-name: savio;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: 1;
+    /* Standard syntax */
+    animation-name: savio;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    float:left;
+
+}
+
+.logostyle{
+    width: 192px;
+    height: 91px;
+    margin-left: 206px;
+    border-radius: 19px;
+
+}
+
+.fsize{
+    width: 400px;
+    height: 200px;
+    border:1px solid;
+    font-size: 27px !important;
+    background-color: #999999;
+    color: lavender;
+}
+
+.errors{
+    color: red;
+}
